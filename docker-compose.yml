@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  zihan-web:
+    build: .
+    container_name: zihan-web
+    ports:
+      - "3003:80"
+    restart: unless-stopped
